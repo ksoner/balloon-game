@@ -78,7 +78,7 @@ function popBalloon(balloon, indexInPositions) {
     poppedCount++;
     nextNumber++;
 
-    if (poppedCount < 25) {
+    if (poppedCount <= 25) {
         let newNumber = getRandomNumber(26, 50);
         createBalloon(newNumber);
     }
